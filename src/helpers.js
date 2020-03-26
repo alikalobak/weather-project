@@ -84,7 +84,7 @@ export const renderClearSearch = (query, setInputValue, setSuggestions) => {
 
 export const fetchSearchSuggestions = async (query, setSuggestions) => {
     try {
-        const response = await axios.get('http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=P325o4iUPsOKEA6GV2byFNsBRqEWh25I&q=' + query)
+        const response = await axios.get('https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=P325o4iUPsOKEA6GV2byFNsBRqEWh25I&q=' + query)
         setSuggestions(response.data)
     } catch (e) {
         console.log('Network error. Please check your connection and try again.')
@@ -132,13 +132,13 @@ export const useInitialForecast = () => {
     const [forecasts, setForecasts] = useState({})
 
     useEffect(() => {
-        axios.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationCode}?apikey=XmwZ0Xg7fBum5BgGI09qAA9EmvG7D755&metric=true`)
+        axios.get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${locationCode}?apikey=XmwZ0Xg7fBum5BgGI09qAA9EmvG7D755&metric=true`)
             .then(res => {
                 const headline = res.data.Headline
                 const dailyForecasts = res.data.DailyForecasts
                 setForecasts({ headline, dailyForecasts })
             }).catch(e => console.log(e))
-        axios.get(`http://dataservice.accuweather.com/locations/v1/${locationCode}?apikey=XmwZ0Xg7fBum5BgGI09qAA9EmvG7D755&metric=true`).
+        axios.get(`https://dataservice.accuweather.com/locations/v1/${locationCode}?apikey=XmwZ0Xg7fBum5BgGI09qAA9EmvG7D755&metric=true`).
             then(res => {
                 const locationName = res.data.EnglishName
                 const localizedName = res.data.LocalizedName
@@ -154,7 +154,7 @@ export const fetchForecasts = async (location) => {
     const forecasts = {}
     const locationDetails = {}
     try {
-        const res = await axios.get(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${location.Key}?apikey=XmwZ0Xg7fBum5BgGI09qAA9EmvG7D755&metric=true`)
+        const res = await axios.get(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${location.Key}?apikey=XmwZ0Xg7fBum5BgGI09qAA9EmvG7D755&metric=true`)
         forecasts.headline = res.data.Headline
         forecasts.dailyForecasts = res.data.DailyForecasts
         locationDetails.locationName = location.LocalizedName
