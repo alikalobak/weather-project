@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/weather-project/static/js/main.463a4040.chunk.js",
-    "main.js.map": "/weather-project/static/js/main.463a4040.chunk.js.map",
+    "main.js": "/weather-project/static/js/main.c03ec219.chunk.js",
+    "main.js.map": "/weather-project/static/js/main.c03ec219.chunk.js.map",
     "runtime-main.js": "/weather-project/static/js/runtime-main.6eacfc1d.js",
     "runtime-main.js.map": "/weather-project/static/js/runtime-main.6eacfc1d.js.map",
     "static/js/2.a89c5502.chunk.js": "/weather-project/static/js/2.a89c5502.chunk.js",
     "static/js/2.a89c5502.chunk.js.map": "/weather-project/static/js/2.a89c5502.chunk.js.map",
     "index.html": "/weather-project/index.html",
-    "precache-manifest.91f3276f6d25f83f9d0ef6569999597e.js": "/weather-project/precache-manifest.91f3276f6d25f83f9d0ef6569999597e.js",
+    "precache-manifest.0dcde886143708b00ca040fe8b001fc4.js": "/weather-project/precache-manifest.0dcde886143708b00ca040fe8b001fc4.js",
     "service-worker.js": "/weather-project/service-worker.js",
     "static/js/2.a89c5502.chunk.js.LICENSE.txt": "/weather-project/static/js/2.a89c5502.chunk.js.LICENSE.txt",
     "static/media/clear.226bf20b.svg": "/weather-project/static/media/clear.226bf20b.svg"
@@ -15,6 +15,6 @@
   "entrypoints": [
     "static/js/runtime-main.6eacfc1d.js",
     "static/js/2.a89c5502.chunk.js",
-    "static/js/main.463a4040.chunk.js"
+    "static/js/main.c03ec219.chunk.js"
   ]
 }
